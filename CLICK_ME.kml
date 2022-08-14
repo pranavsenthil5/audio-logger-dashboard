@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kml xmlns="http://earth.google.com/kml/2.0" xmlns:gx="http://www.google.com/kml/ext/2.2">
+
+<Document>
+<name>Coverage Results</name>
+<open>1</open>
+<NetworkLink>
+   <name>Layers</name>
+   <flyToView>0</flyToView>
+   <refreshVisibility>0</refreshVisibility>
+   <visibility>1</visibility>
+   <open>1</open>
+   <Link>
+       <href>\KML_DATA\Reload.kml</href>
+       <refreshMode>onInterval</refreshMode>
+       <refreshInterval>15</refreshInterval>
+   </Link>
+</NetworkLink>
+</Document>
+</kml>
+

@@ -1,0 +1,31 @@
+import sys
+
+from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QPushButton, QLabel, QVBoxLayout, QStyle
+
+
+class Log_Widget(QHBoxLayout):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.settings_button = QPushButton("Settings")
+        self.settings_button.setIcon(
+            QApplication.style().standardIcon(QStyle.getIcon("windows", QStyle.SP_TitleBarMenuButton)))
+        setIcon(QIcon("close.png"))
+
+        self.addWidget(self.settings_button)
+        self.addWidget(QPushButton("Center"))
+        self.addWidget(QPushButton("Right"))
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+
+    window = QWidget()
+    window.setWindowTitle('Log')
+
+    layout = QVBoxLayout()
+
+    for i in range(0, 3):
+        layout.addLayout(Log_Widget())
+    window.setLayout(layout)
+    window.show()
+    sys.exit(app.exec_())
